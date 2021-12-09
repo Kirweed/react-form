@@ -1,11 +1,11 @@
 import React from 'react';
-import Form from 'Components/Form';
 import GlobalStyle from 'theme/GlobalStyles';
+import Box from 'Components/Box';
 
 const Root = () => (
   <>
     <GlobalStyle />
-    <Form />
+    <Box />
   </>
 );
 
