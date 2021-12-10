@@ -15,11 +15,28 @@ const StyledBox = styled.div`
   border-radius: 20px;
 `;
 
-const Box = () => (
-  <StyledBox>
-    <Header />
-    <Form />
-  </StyledBox>
-);
+class Box extends React.Component {
+  state = {
+    activeForm: 'login',
+  };
+
+  changeForm = (type) => {
+    if (type !== this.state.activeForm) {
+      this.setState({ activeForm: type });
+    }
+  };
+
+  render() {
+    return (
+      <StyledBox>
+        <Header
+          activeForm={this.state.activeForm}
+          changeTabFn={this.changeForm}
+        />
+        <Form type={this.state.activeForm} />
+      </StyledBox>
+    );
+  }
+}
 
 export default Box;
