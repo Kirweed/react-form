@@ -7,7 +7,7 @@ const StyledBox = styled.div`
   overflow: hidden;
   position: relative;
   width: 40vw;
-  height: 80vh;
+  height: fit-content;
   margin: 10vh auto;
   -webkit-box-shadow: 0px 0px 30px -10px rgba(66, 68, 90, 1);
   -moz-box-shadow: 0px 0px 30px -10px rgba(66, 68, 90, 1);

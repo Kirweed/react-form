@@ -22,7 +22,13 @@ const Form = ({ type }) => (
         <Button type="submit">Log in</Button>
       </>
     ) : (
-      <h1>register</h1>
+      <>
+        <Input type="text" placeholder="login" />
+        <Input type="text" placeholder="email" />
+        <Input type="password" placeholder="password" />
+        <Input type="password" placeholder="repeat password" />
+        <Button type="submit">Register</Button>
+      </>
     )}
   </StyledForm>
 );
